@@ -20,7 +20,8 @@ set-env-var-forever FL_DATA_HOME "$HERE"
 set-env-var-forever KILLMAP_HOME "$HERE/killmap/"
 
 if [ ! -d "$D4J_HOME" ]; then
-  git clone 'https://github.com/speezepearson/defects4j.git' "$HERE/defects4j" || die 'unable to clone Defects4J'
+  # git clone 'https://github.com/speezepearson/defects4j.git' "$HERE/defects4j" || die 'unable to clone Defects4J'
+  git clone 'https://github.com/rjust/defects4j.git' "$HERE/defects4j" || die 'unable to clone Defects4J'
   (cd "$HERE/defects4j" && ./init.sh) || die 'unable to initialize Defects4J'
   set-env-var-forever D4J_HOME "$HERE/defects4j/"
   set-env-var-forever DEFECTS4J_HOME "$HERE/defects4j/"
