@@ -24,5 +24,5 @@ rm -rf $SPECTRA_RESULT $LOCATE_RESULT
 COMP_SPECTRA="$(pwd)/gzoltar/run_gzoltar.sh $PID $VID $PROJ_DIR $SPECTRA_RESULT $GZOLTAR_JAR"
 $COMP_SPECTRA
 
-LOCATE="$(pwd)/analysis/pipeline-scripts/previously-studied-flts/sbfl.sh $PID $VID $(pwd)"
+LOCATE="$(pwd)/analysis/pipeline-scripts/previously-studied-flts/sbfl.sh $PID $VID $OUTPUT_DIR"
 $LOCATE
